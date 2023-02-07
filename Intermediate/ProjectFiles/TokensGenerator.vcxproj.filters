@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TokensGenerator.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{5A1088DF-143E-4636-A989-6E8BDD46F847}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TokensGenerator.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TokensGeneratorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{F49D0924-46E5-473B-9B7B-864540243AB1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{9020C6C6-35CE-474D-A8FB-8CFE3BF63455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\TokensGeneratorPlugin">
+      <UniqueIdentifier>{D36CBBB3-A624-4D2E-9B40-D156EFD62B10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\TokensGeneratorPlugin\Source">
+      <UniqueIdentifier>{6A6F1EA0-7CC8-431A-BFB2-B2D293030C52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin">
+      <UniqueIdentifier>{8A973397-8B41-4223-B954-86DCAB82ED3D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\TokensGeneratorPlugin.Build.cs">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private">
+      <UniqueIdentifier>{06557050-250C-4CFC-9AC1-F2E36875E135}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private\HexGrid.cpp">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private\TokenGridSlot.cpp">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private\Tokens.cpp">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private\TokensGeneratorPlugin.cpp">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public">
+      <UniqueIdentifier>{9F3CF0AD-A5C5-4B50-A5ED-38C3C97792BF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\HexGrid.h">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\TokenGridSlot.h">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\Tokens.h">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\TokensGeneratorPlugin.h">
+      <Filter>Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\TokensGeneratorPlugin\TokensGeneratorPlugin.uplugin">
+      <Filter>Plugins\TokensGeneratorPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\TokensGeneratorPlugin\Resources">
+      <UniqueIdentifier>{60CA1D4A-84F5-4EF8-B5BD-7E6330F0B02F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\TokensGeneratorPlugin\Resources\Icon128.png">
+      <Filter>Plugins\TokensGeneratorPlugin\Resources</Filter>
+    </None>
+    <Filter Include="Source\TokensGenerator">
+      <UniqueIdentifier>{4CF1070D-B217-4485-97FE-EF4D965FD386}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TokensGenerator\HexGrid.cpp">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TokensGenerator\HexGrid.h">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\TokensGenerator\TokensGenerator.Build.cs">
+      <Filter>Source\TokensGenerator</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TokensGenerator\TokensGenerator.cpp">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TokensGenerator\TokensGenerator.h">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TokensGenerator\TokensGeneratorGameModeBase.cpp">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TokensGenerator\TokensGeneratorGameModeBase.h">
+      <Filter>Source\TokensGenerator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

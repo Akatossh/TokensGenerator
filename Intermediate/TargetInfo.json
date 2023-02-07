@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TokensGenerator",
+			"Path": "D:\\Unreal_projects\\TokensGenerator\\Source\\TokensGenerator.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TokensGeneratorEditor",
+			"Path": "D:\\Unreal_projects\\TokensGenerator\\Source\\TokensGeneratorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

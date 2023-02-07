@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"D:\\Unreal_projects\\TokensGenerator\\Source\\TokensGenerator\\TokensGenerator.Build.cs",
+		"D:\\Unreal_projects\\TokensGenerator\\Plugins\\TokensGeneratorPlugin\\Source\\TokensGeneratorPlugin\\TokensGeneratorPlugin.Build.cs",
+		"D:\\Unreal_projects\\TokensGenerator\\Source\\TokensGenerator.Target.cs",
+		"D:\\Unreal_projects\\TokensGenerator\\Source\\TokensGeneratorEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
