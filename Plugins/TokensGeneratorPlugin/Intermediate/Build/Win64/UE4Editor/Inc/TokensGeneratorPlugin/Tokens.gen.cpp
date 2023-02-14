@@ -17,13 +17,12 @@ void EmptyLinkFunctionForGeneratedCodeTokens() {}
 	UPackage* Z_Construct_UPackage__Script_TokensGeneratorPlugin();
 	TOKENSGENERATORPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FTokens_DT();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
-	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	TOKENSGENERATORPLUGIN_API UClass* Z_Construct_UClass_ATokens_NoRegister();
 	TOKENSGENERATORPLUGIN_API UClass* Z_Construct_UClass_ATokens();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 // End Cross Module References
 	static UEnum* EGridShape_StaticEnum()
 	{
@@ -115,21 +114,13 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_name_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FTextPropertyParams NewProp_name;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_value_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_value;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_base_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mesh_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_base;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_color_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_color;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mesh;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -144,13 +135,6 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FTokens_DT>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_name_MetaData[] = {
-		{ "Category", "tokens" },
-		{ "ModuleRelativePath", "Public/Tokens.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_name = { "name", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTokens_DT, name), METADATA_PARAMS(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_name_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_value_MetaData[] = {
 		{ "Category", "tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
@@ -158,24 +142,15 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTokens_DT, value), METADATA_PARAMS(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_value_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_base_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_mesh_MetaData[] = {
 		{ "Category", "tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_base = { "base", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTokens_DT, base), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_base_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_base_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_color_MetaData[] = {
-		{ "Category", "tokens" },
-		{ "ModuleRelativePath", "Public/Tokens.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_color = { "color", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTokens_DT, color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_color_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_color_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTokens_DT, mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FTokens_DT_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_name,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_value,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_base,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_color,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTokens_DT_Statics::NewProp_mesh,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FTokens_DT_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_TokensGeneratorPlugin,
@@ -205,7 +180,21 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTokens_DT_Hash() { return 3593226876U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTokens_DT_Hash() { return 1499403848U; }
+	DEFINE_FUNCTION(ATokens::execGetColumnsKeys)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<int32>*)Z_Param__Result=P_THIS->GetColumnsKeys();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATokens::execGetTokenInstacesColumns)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TMap<int32,UInstancedStaticMeshComponent*>*)Z_Param__Result=P_THIS->GetTokenInstacesColumns();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ATokens::execGetPoints)
 	{
 		P_FINISH;
@@ -242,7 +231,9 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AddPoints", &ATokens::execAddPoints },
 			{ "ClearPoints", &ATokens::execClearPoints },
+			{ "GetColumnsKeys", &ATokens::execGetColumnsKeys },
 			{ "GetPoints", &ATokens::execGetPoints },
+			{ "GetTokenInstacesColumns", &ATokens::execGetTokenInstacesColumns },
 			{ "SetPoints", &ATokens::execSetPoints },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -266,6 +257,7 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_AddPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
@@ -288,6 +280,7 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_ClearPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
@@ -298,6 +291,42 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATokens_ClearPoints_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics
+	{
+		struct Tokens_eventGetColumnsKeys_Parms
+		{
+			TArray<int32> ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tokens_eventGetColumnsKeys_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::NewProp_ReturnValue_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
+		{ "ModuleRelativePath", "Public/Tokens.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATokens, nullptr, "GetColumnsKeys", nullptr, nullptr, sizeof(Tokens_eventGetColumnsKeys_Parms), Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATokens_GetColumnsKeys()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATokens_GetColumnsKeys_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -320,6 +349,7 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_GetPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
@@ -330,6 +360,53 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATokens_GetPoints_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics
+	{
+		struct Tokens_eventGetTokenInstacesColumns_Parms
+		{
+			TMap<int32,UInstancedStaticMeshComponent*> ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_ValueProp;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue_Key_KeyProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_ValueProp = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_Key_KeyProp = { "ReturnValue_Key", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tokens_eventGetTokenInstacesColumns_Parms, ReturnValue), EMapPropertyFlags::None, METADATA_PARAMS(Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_ValueProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
+		{ "ModuleRelativePath", "Public/Tokens.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATokens, nullptr, "GetTokenInstacesColumns", nullptr, nullptr, sizeof(Tokens_eventGetTokenInstacesColumns_Parms), Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATokens_GetTokenInstacesColumns()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATokens_GetTokenInstacesColumns_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -352,6 +429,7 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATokens_SetPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
@@ -422,10 +500,12 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		(UObject* (*)())Z_Construct_UPackage__Script_TokensGeneratorPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATokens_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ATokens_AddPoints, "AddPoints" }, // 2804715983
-		{ &Z_Construct_UFunction_ATokens_ClearPoints, "ClearPoints" }, // 3041317552
-		{ &Z_Construct_UFunction_ATokens_GetPoints, "GetPoints" }, // 263817317
-		{ &Z_Construct_UFunction_ATokens_SetPoints, "SetPoints" }, // 2902482327
+		{ &Z_Construct_UFunction_ATokens_AddPoints, "AddPoints" }, // 845505155
+		{ &Z_Construct_UFunction_ATokens_ClearPoints, "ClearPoints" }, // 4240045820
+		{ &Z_Construct_UFunction_ATokens_GetColumnsKeys, "GetColumnsKeys" }, // 3700472832
+		{ &Z_Construct_UFunction_ATokens_GetPoints, "GetPoints" }, // 3774364509
+		{ &Z_Construct_UFunction_ATokens_GetTokenInstacesColumns, "GetTokenInstacesColumns" }, // 845843860
+		{ &Z_Construct_UFunction_ATokens_SetPoints, "SetPoints" }, // 1613905392
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATokens_Statics::Class_MetaDataParams[] = {
@@ -435,14 +515,14 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATokens_Statics::NewProp_Tokens_DT_MetaData[] = {
-		{ "Category", "test" },
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATokens_Statics::NewProp_Tokens_DT = { "Tokens_DT", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATokens, Tokens_DT), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATokens_Statics::NewProp_Tokens_DT_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATokens_Statics::NewProp_Tokens_DT_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATokens_Statics::NewProp_TokenMesh_MetaData[] = {
-		{ "Category", "test" },
+		{ "Category", "Tokens" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
 	};
 #endif
@@ -484,18 +564,22 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATokens_Statics::NewProp_YSpaceing = { "YSpaceing", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATokens, YSpaceing), METADATA_PARAMS(Z_Construct_UClass_ATokens_Statics::NewProp_YSpaceing_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATokens_Statics::NewProp_YSpaceing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATokens_Statics::NewProp_Points_MetaData[] = {
-		{ "Category", "test" },
+		{ "Category", "Tokens" },
+		{ "Comment", "//Total amount of point that size of the heap will be calculated by\n" },
 		{ "ExposeOnSpawn", "true" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
+		{ "ToolTip", "Total amount of point that size of the heap will be calculated by" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATokens_Statics::NewProp_Points = { "Points", nullptr, (EPropertyFlags)0x0021080000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATokens, Points), METADATA_PARAMS(Z_Construct_UClass_ATokens_Statics::NewProp_Points_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATokens_Statics::NewProp_Points_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ATokens_Statics::NewProp_Shape_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATokens_Statics::NewProp_Shape_MetaData[] = {
-		{ "Category", "test" },
+		{ "Category", "Tokens" },
+		{ "Comment", "//Shape of the heap\n" },
 		{ "ExposeOnSpawn", "true" },
 		{ "ModuleRelativePath", "Public/Tokens.h" },
+		{ "ToolTip", "Shape of the heap" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ATokens_Statics::NewProp_Shape = { "Shape", nullptr, (EPropertyFlags)0x0021080000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATokens, Shape), Z_Construct_UEnum_TokensGeneratorPlugin_EGridShape, METADATA_PARAMS(Z_Construct_UClass_ATokens_Statics::NewProp_Shape_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATokens_Statics::NewProp_Shape_MetaData)) };
@@ -538,7 +622,7 @@ static struct FScriptStruct_TokensGeneratorPlugin_StaticRegisterNativesFTokens_D
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATokens, 908570622);
+	IMPLEMENT_CLASS(ATokens, 1864050731);
 	template<> TOKENSGENERATORPLUGIN_API UClass* StaticClass<ATokens>()
 	{
 		return ATokens::StaticClass();

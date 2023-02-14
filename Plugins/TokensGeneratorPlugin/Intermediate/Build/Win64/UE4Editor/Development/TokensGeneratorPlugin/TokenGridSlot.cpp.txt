@@ -1,0 +1,9 @@
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Definitions.TokensGeneratorPlugin.h
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\TokenGridSlot.h
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\vector
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\xmemory
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\limits
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\cfloat
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\cwchar
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\cstdio
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE\isa_availability.h

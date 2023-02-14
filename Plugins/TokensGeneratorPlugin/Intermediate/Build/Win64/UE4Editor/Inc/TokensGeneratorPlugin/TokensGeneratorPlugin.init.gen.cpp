@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeTokensGeneratorPlugin_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x521EEC27,
+				0x84D0EA7E,
 				0xD7A172C1,
 				METADATA_PARAMS(nullptr, 0)
 			};

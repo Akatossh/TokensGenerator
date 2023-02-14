@@ -1,0 +1,10 @@
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Definitions.TokensGeneratorPlugin.h
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\Tokens.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Inc\TokensGeneratorPlugin\Tokens.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Source\TokensGeneratorPlugin\Public\HexGrid.h

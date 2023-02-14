@@ -2,10 +2,10 @@
 	"RemapUnityFiles": 
 	{
 		"Module.TokensGeneratorPlugin.cpp.obj": [
+			"TokensGeneratorPlugin.cpp.obj",
 			"HexGrid.cpp.obj",
 			"TokenGridSlot.cpp.obj",
-			"Tokens.cpp.obj",
-			"TokensGeneratorPlugin.cpp.obj"
+			"Tokens.cpp.obj"
 		],
 		"Module.TokensGeneratorPlugin.gen.cpp.obj": [
 			"Tokens.gen.cpp.obj",

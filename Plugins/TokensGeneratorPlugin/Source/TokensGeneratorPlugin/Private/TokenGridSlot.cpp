@@ -84,10 +84,10 @@ int TokenGridSlot::nextCircSlotID(int origin, const int step) const
 
 FVector TokenGridSlot::calcLocation(int id, float X, float Y) const
 {
-	float xloc = FMath::Sqrt(X * X + Y * Y) * FMath::Sin(2 * PI / adj_num * id);
-	float yloc = FMath::Sqrt(X * X + Y * Y) * FMath::Cos(2 * PI / adj_num * id);
+	float xloc = X * FMath::Sin(2 * PI / adj_num * id);
+	float yloc = Y * FMath::Cos(2 * PI / adj_num * id);
 
-	return FVector{ xloc, yloc ,0.0 };
+	return FVector{ xloc, yloc , 0.0 };
 }
 
 void TokenGridSlot::SetLoc(float X, float Y)

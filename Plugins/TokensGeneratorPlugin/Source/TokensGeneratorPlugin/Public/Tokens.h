@@ -13,16 +13,10 @@ struct FTokens_DT : public FTableRowBase
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = tokens)
-	FText name;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = tokens)
 	int32 value;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = tokens)
-	UTexture2D* base;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = tokens)
-	FColor color;
+	class UStaticMesh* mesh;
 }; 
 
 UENUM(BlueprintType)
@@ -43,10 +37,10 @@ public:
 	// Sets default values for this actor's properties
 	ATokens();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = test)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Tokens)
 	class UDataTable* Tokens_DT;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = test)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Tokens)
 	class UStaticMesh* TokenMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Apperance)
@@ -64,17 +58,23 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Apperance)
 	float YSpaceing = 5.0f;
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = Tokens)
 	void SetPoints(int32 Points);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = Tokens)
 	void AddPoints(int32 points);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = Tokens)
 	void ClearPoints();
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = Tokens)
 	int32 GetPoints();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = Tokens)
+	FORCEINLINE TMap<int32, class UInstancedStaticMeshComponent*>& GetTokenInstacesColumns() { return TokenInstacesColumns; };
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = Tokens)
+	FORCEINLINE	TArray<int32> GetColumnsKeys() { return keys; };
 
 protected:
 	// Called when the game starts or when spawned
@@ -82,23 +82,30 @@ protected:
 
 	virtual void OnConstruction(const FTransform& transform) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = test, meta = (ExposeOnSpawn = "true"))
+	//Total amount of point that size of the heap will be calculated by
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Tokens, meta = (ExposeOnSpawn = "true"))
 	int32 Points;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = test, meta = (ExposeOnSpawn = "true"))
+	//Shape of the heap
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Tokens, meta = (ExposeOnSpawn = "true"))
 	EGridShape Shape;
 
-	void SpawnInstances();
-
-	TArray<FTransform> SpawnTransforms;
-	TArray<UInstancedStaticMeshComponent*> instancedColumns;
+	//
+	virtual void splitPoints();
 
 private:
-	int32 split_points(const TArray<int32>& keys);
+	//Map of instancesStaticMeshColumns
+	TMap<int32, class UInstancedStaticMeshComponent*> TokenInstacesColumns;
+
+	TArray<int32> keys;
 	TArray<FTransform> generateTransforms(const int32 key, float& height, int32 & hexID, const int32 cnt);
-	TMap<int32, UInstancedStaticMeshComponent*> TokenInstacesColumns;
+	
 	TMap<int32, int32> KeyNumColumn;
-	bool initialized = false;
 	TArray<FVector> GridLocation;
 	class HexGrid* hexGrid = nullptr;
+	TArray<FTransform> SpawnTransforms;
+
+	void GenerateInstancedColumns();
+	void SpawnInstances();
+	void DeleteColumns();
 };

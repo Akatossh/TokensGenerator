@@ -34,6 +34,9 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "D:\Unreal_projects\TokensGenerator\Intermediate\Build\Win64\TokensGeneratorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\HexGrid.cpp.obj"
+"D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\TokenGridSlot.cpp.obj"
+"D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Tokens.cpp.obj"
 "D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Module.TokensGeneratorPlugin.cpp.obj"
 "D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Module.TokensGeneratorPlugin.gen.cpp.obj"
 "D:\Unreal_projects\TokensGenerator\Plugins\TokensGeneratorPlugin\Intermediate\Build\Win64\UE4Editor\Development\TokensGeneratorPlugin\Default.rc2.res"

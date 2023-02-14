@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+ class UInstancedStaticMeshComponent;
 #ifdef TOKENSGENERATORPLUGIN_Tokens_generated_h
 #error "Tokens.generated.h already included, missing '#pragma once' in Tokens.h"
 #endif
@@ -21,24 +22,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> TOKENSGENERATORPLUGIN_API UScriptStruct* StaticStruct<struct FTokens_DT>();
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_SPARSE_DATA
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_RPC_WRAPPERS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_SPARSE_DATA
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetColumnsKeys); \
+	DECLARE_FUNCTION(execGetTokenInstacesColumns); \
 	DECLARE_FUNCTION(execGetPoints); \
 	DECLARE_FUNCTION(execClearPoints); \
 	DECLARE_FUNCTION(execAddPoints); \
 	DECLARE_FUNCTION(execSetPoints);
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetColumnsKeys); \
+	DECLARE_FUNCTION(execGetTokenInstacesColumns); \
 	DECLARE_FUNCTION(execGetPoints); \
 	DECLARE_FUNCTION(execClearPoints); \
 	DECLARE_FUNCTION(execAddPoints); \
 	DECLARE_FUNCTION(execSetPoints);
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_INCLASS_NO_PURE_DECLS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATokens(); \
 	friend struct Z_Construct_UClass_ATokens_Statics; \
@@ -47,7 +52,7 @@ public: \
 	DECLARE_SERIALIZER(ATokens)
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_INCLASS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_INCLASS \
 private: \
 	static void StaticRegisterNativesATokens(); \
 	friend struct Z_Construct_UClass_ATokens_Statics; \
@@ -56,7 +61,7 @@ public: \
 	DECLARE_SERIALIZER(ATokens)
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_STANDARD_CONSTRUCTORS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATokens(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATokens) \
@@ -69,7 +74,7 @@ private: \
 public:
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_ENHANCED_CONSTRUCTORS \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATokens(ATokens&&); \
@@ -80,32 +85,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATokens)
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_PRIVATE_PROPERTY_OFFSET \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Points() { return STRUCT_OFFSET(ATokens, Points); } \
 	FORCEINLINE static uint32 __PPO__Shape() { return STRUCT_OFFSET(ATokens, Shape); }
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_37_PROLOG
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_GENERATED_BODY_LEGACY \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_31_PROLOG
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_PRIVATE_PROPERTY_OFFSET \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_SPARSE_DATA \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_RPC_WRAPPERS \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_INCLASS \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_STANDARD_CONSTRUCTORS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_PRIVATE_PROPERTY_OFFSET \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_SPARSE_DATA \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_RPC_WRAPPERS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_INCLASS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_GENERATED_BODY \
+#define TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_PRIVATE_PROPERTY_OFFSET \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_SPARSE_DATA \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_INCLASS_NO_PURE_DECLS \
-	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_40_ENHANCED_CONSTRUCTORS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_PRIVATE_PROPERTY_OFFSET \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_SPARSE_DATA \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_INCLASS_NO_PURE_DECLS \
+	TokensGenerator_Plugins_TokensGeneratorPlugin_Source_TokensGeneratorPlugin_Public_Tokens_h_34_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

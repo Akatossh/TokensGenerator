@@ -2,6 +2,7 @@
 
 #include "HexGrid.h"
 #include "TokenGridSlot.h"
+#include "Containers/Queue.h"
 
 
 HexGrid::HexGrid(int32 shape = 6)
@@ -20,6 +21,8 @@ HexGrid::~HexGrid()
 	{
 		delete node;
 	}
+	delete Origin;
+	delete currentHex;
 	GridPoints.Empty();
 	Nodes.Empty();
 	Nodes.Empty();
